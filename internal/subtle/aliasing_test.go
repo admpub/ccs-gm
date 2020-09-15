@@ -7,7 +7,7 @@ package subtle_test
 import (
 	"testing"
 
-	"github.com/Hyperledger-TWGC/ccs-gm/internal/subtle"
+	"github.com/admpub/ccs-gm/internal/subtle"
 )
 
 var a, b [100]byte

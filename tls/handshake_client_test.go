@@ -13,7 +13,6 @@ import (
 	"encoding/pem"
 	"errors"
 	"fmt"
-	"github.com/Hyperledger-TWGC/ccs-gm/x509"
 	"io"
 	"math/big"
 	"net"
@@ -25,6 +24,8 @@ import (
 	"sync"
 	"testing"
 	"time"
+
+	"github.com/admpub/ccs-gm/x509"
 )
 
 // Note: see comment in handshake_test.go for details of how the reference

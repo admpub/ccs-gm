@@ -5,8 +5,9 @@ import (
 	"encoding/pem"
 	"errors"
 	"fmt"
-	"github.com/Hyperledger-TWGC/ccs-gm/sm2"
-	"github.com/Hyperledger-TWGC/ccs-gm/x509"
+
+	"github.com/admpub/ccs-gm/sm2"
+	"github.com/admpub/ccs-gm/x509"
 )
 
 // PrivateKeyToPEM converts the private key to PEM format.
@@ -99,7 +100,7 @@ func PublicKeyToPEM(publicKey *sm2.PublicKey, pwd []byte) ([]byte, error) {
 
 	PubASN1, err := x509.MarshalPKIXPublicKey(publicKey)
 	if err != nil {
-			return nil, err
+		return nil, err
 	}
 	return pem.EncodeToMemory(
 		&pem.Block{
@@ -121,8 +122,8 @@ func PublicKeyToEncryptedPEM(publicKey *sm2.PublicKey, pwd []byte) ([]byte, erro
 
 	raw, err := x509.MarshalPKIXPublicKey(publicKey)
 	if err != nil {
-			return nil, err
-		}
+		return nil, err
+	}
 	block, err := x509.EncryptPEMBlock(
 		rand.Reader,
 		"PUBLIC KEY",
@@ -130,8 +131,8 @@ func PublicKeyToEncryptedPEM(publicKey *sm2.PublicKey, pwd []byte) ([]byte, erro
 		pwd,
 		x509.PEMCipherAES256)
 	if err != nil {
-			return nil, err
-		}
+		return nil, err
+	}
 
 	return pem.EncodeToMemory(block), nil
 }

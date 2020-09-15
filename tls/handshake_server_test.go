@@ -14,7 +14,6 @@ import (
 	"encoding/pem"
 	"errors"
 	"fmt"
-	"github.com/Hyperledger-TWGC/ccs-gm/x509"
 	"io"
 	"math/big"
 	"net"
@@ -24,6 +23,8 @@ import (
 	"strings"
 	"testing"
 	"time"
+
+	"github.com/admpub/ccs-gm/x509"
 )
 
 // zeroSource is an io.Reader that returns an unlimited number of zero bytes.

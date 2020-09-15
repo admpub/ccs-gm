@@ -11,9 +11,10 @@ import (
 	"crypto/subtle"
 	"errors"
 	"fmt"
-	"github.com/Hyperledger-TWGC/ccs-gm/x509"
 	"io"
 	"sync/atomic"
+
+	"github.com/admpub/ccs-gm/x509"
 )
 
 // serverHandshakeState contains details of a server handshake in progress.

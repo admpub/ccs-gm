@@ -11,13 +11,14 @@ import (
 	"crypto/sha512"
 	"errors"
 	"fmt"
-	"github.com/Hyperledger-TWGC/ccs-gm/x509"
 	"io"
 	"math/big"
 	"net"
 	"strings"
 	"sync"
 	"time"
+
+	"github.com/admpub/ccs-gm/x509"
 )
 
 const (

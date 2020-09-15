@@ -10,8 +10,9 @@ import (
 	"encoding/asn1"
 	"errors"
 	"fmt"
-	"github.com/Hyperledger-TWGC/ccs-gm/sm2"
 	"math/big"
+
+	"github.com/admpub/ccs-gm/sm2"
 )
 
 const ecPrivKeyVersion = 1

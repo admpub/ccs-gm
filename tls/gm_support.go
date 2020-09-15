@@ -11,13 +11,14 @@ import (
 	"encoding/pem"
 	"errors"
 	"fmt"
-	"github.com/Hyperledger-TWGC/ccs-gm/sm2"
-	"github.com/Hyperledger-TWGC/ccs-gm/sm3"
-	"github.com/Hyperledger-TWGC/ccs-gm/sm4"
-	"github.com/Hyperledger-TWGC/ccs-gm/x509"
 	"io/ioutil"
 	"strings"
 	"sync"
+
+	"github.com/admpub/ccs-gm/sm2"
+	"github.com/admpub/ccs-gm/sm3"
+	"github.com/admpub/ccs-gm/sm4"
+	"github.com/admpub/ccs-gm/x509"
 )
 
 const VersionGMSSL = 0x0101 // GM/T 0024-2014

@@ -17,12 +17,13 @@ import (
 	"encoding/pem"
 	"errors"
 	"fmt"
-	"github.com/Hyperledger-TWGC/ccs-gm/sm2"
-	"github.com/Hyperledger-TWGC/ccs-gm/x509"
 	"io/ioutil"
 	"net"
 	"strings"
 	"time"
+
+	"github.com/admpub/ccs-gm/sm2"
+	"github.com/admpub/ccs-gm/x509"
 )
 
 // Server returns a new TLS server side connection

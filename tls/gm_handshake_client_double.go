@@ -14,11 +14,12 @@ import (
 	"crypto/subtle"
 	"errors"
 	"fmt"
-	"github.com/Hyperledger-TWGC/ccs-gm/sm2"
-	"github.com/Hyperledger-TWGC/ccs-gm/x509"
 	"io"
 	"strconv"
 	"sync/atomic"
+
+	"github.com/admpub/ccs-gm/sm2"
+	"github.com/admpub/ccs-gm/x509"
 )
 
 type clientHandshakeStateGM struct {

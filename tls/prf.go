@@ -13,8 +13,9 @@ import (
 	"crypto/sha512"
 	"errors"
 	"fmt"
-	"github.com/Hyperledger-TWGC/ccs-gm/sm3"
 	"hash"
+
+	"github.com/admpub/ccs-gm/sm3"
 )
 
 // Split a premaster secret in two as specified in RFC 4346, section 5.

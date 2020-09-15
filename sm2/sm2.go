@@ -11,7 +11,7 @@ import (
 	"io"
 	"math/big"
 
-	"github.com/Hyperledger-TWGC/ccs-gm/sm3"
+	"github.com/admpub/ccs-gm/sm3"
 )
 
 type PublicKey struct {

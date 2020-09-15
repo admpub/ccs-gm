@@ -9,7 +9,6 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/Hyperledger-TWGC/ccs-gm/x509"
 	"io"
 	"io/ioutil"
 	"math"
@@ -19,6 +18,8 @@ import (
 	"strings"
 	"testing"
 	"time"
+
+	"github.com/admpub/ccs-gm/x509"
 )
 
 var rsaCertPEM = `-----BEGIN CERTIFICATE-----
