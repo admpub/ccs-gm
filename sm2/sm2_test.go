@@ -9,7 +9,7 @@ import (
 	"crypto/elliptic"
 	"crypto/rand"
 	"encoding/hex"
-	"github.com/Hyperledger-TWGC/ccs-gm/sm3"
+	"github.com/admpub/ccs-gm/sm3"
 	"math/big"
 	"testing"
 )

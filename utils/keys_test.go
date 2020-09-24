@@ -2,7 +2,7 @@ package utils
 
 import (
 	"crypto/rand"
-	"github.com/Hyperledger-TWGC/ccs-gm/sm2"
+	"github.com/admpub/ccs-gm/sm2"
 	"testing"
 )
 
@@ -24,7 +24,7 @@ func TestPEM2Key(t *testing.T) {
 	if err != nil {
 		t.Errorf("pem to private key error %t", err)
 	}
-	
+
 	normalPk, err := PEMtoPublicKey(pemPk, nil)
 	if err != nil {
 		t.Errorf("pem to public key error %t", err)
